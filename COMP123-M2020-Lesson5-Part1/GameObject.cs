@@ -12,7 +12,7 @@ namespace COMP123_M2020_Lesson5_Part1
         private string m_name;
 
         // PUBLIC PROPERTIES
-        public Transform Transform { get; set; }
+        public Transform transform { get; set; }
 
         public string Name
         {
@@ -31,13 +31,25 @@ namespace COMP123_M2020_Lesson5_Part1
         public GameObject(string name)
         {
             Name = name;
+
+            m_initialize();
         }
 
         // PRIVATE METHODS
+        private void m_initialize()
+        {
+            transform = new Transform();
+        }
 
         // PUBLIC METHOD
+        public override string ToString()
+        {
+            string outputString = "";
 
+            outputString += $"Name    : {Name}\n";
+            outputString += transform.ToString();
 
-
+            return outputString;
+        }
     }
 }
