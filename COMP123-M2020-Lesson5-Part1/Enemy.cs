@@ -23,7 +23,7 @@ namespace COMP123_M2020_Lesson5_Part1
         // PUBLIC METHODS
         public virtual float FireBullet()
         {
-            Console.WriteLine("Firing Bullet!");
+            Console.WriteLine($"{Name} Firing Bullet!");
             return 20.0f;
         }
     }

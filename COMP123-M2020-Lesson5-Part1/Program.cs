@@ -19,23 +19,27 @@ namespace COMP123_M2020_Lesson5_Part1
             player.transform.position = new Vector2D(100.0f, 100.0f);
             Console.WriteLine(player.ToString());
 
-            player.transform.position += Vector2D.Up() * playerSpeed;
+            Enemy redEnemy = new Enemy("Red Enemy");
+            redEnemy.transform.position = new Vector2D(225.0f, 200.0f);
+            Console.WriteLine(redEnemy.ToString());
+
+            float distance = Vector2D.Distance(player.transform.position, redEnemy.transform.position);
+            Console.WriteLine($"The Distance between the player and the red enemy is {distance}");
+
+            player.Health -= redEnemy.FireBullet();
+            Console.WriteLine(player.ToString());
+
+            BossEnemy boss = new BossEnemy();
+            boss.transform.position = Vector2D.Zero();
+            Console.WriteLine(boss.ToString());
+
+            float bossDistance = Vector2D.Distance(player.transform.position, boss.transform.position);
+            Console.WriteLine($"The Distance between the player and the boss is {bossDistance}");
+
+            player.Health -= boss.FireBullet();
             Console.WriteLine(player.ToString());
 
 
-            Vector2D vector1 = new Vector2D(0.0f, 3.0f);
-            Vector2D vector2 = new Vector2D(4.0f, 0.0f);
-            Console.WriteLine("Value of vector1 is: " + vector1.ToString());
-            Console.WriteLine("Value of vector2 is: " + vector2.ToString());
-
-
-            float dot = Vector2D.Dot(vector1, vector2);
-            Console.WriteLine($"The Dot product is: {dot}");
-
-            float distance = Vector2D.Distance(vector1, vector2);
-            Console.WriteLine($"The Distance between vector1 and vector2 is {distance}");
-            
-            
             // listen for any key
             Console.ReadLine();
         }

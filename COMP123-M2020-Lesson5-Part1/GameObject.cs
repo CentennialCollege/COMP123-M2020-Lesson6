@@ -10,7 +10,7 @@ namespace COMP123_M2020_Lesson5_Part1
     {
         // PRIVATE INSTANCE MEMBERS (FIELDS)
         private string m_name;
-        private float m_health;
+        protected float m_health;
 
         // PUBLIC PROPERTIES
         public Transform transform { get; set; }
@@ -28,7 +28,7 @@ namespace COMP123_M2020_Lesson5_Part1
             }
         }
 
-        public float Health
+        public virtual float Health
         {
             get
             {
