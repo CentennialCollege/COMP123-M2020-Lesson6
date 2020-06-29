@@ -62,7 +62,7 @@ namespace COMP123_M2020_Lesson5_Part1
 
         // CONSTRUCTOR
         public Player() 
-            : base("Player")
+            : base(GameObjectType.PLAYER)
         {
             
         }

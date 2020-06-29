@@ -12,8 +12,8 @@ namespace COMP123_M2020_Lesson5_Part1
         // PUBLIC PROPERTIES
 
         // CONSTRUCTOR
-        public Enemy(string name) 
-            : base(name)
+        public Enemy(GameObjectType type) 
+            : base(type)
         {
             
         }
@@ -23,7 +23,7 @@ namespace COMP123_M2020_Lesson5_Part1
         // PUBLIC METHODS
         public virtual float FireBullet()
         {
-            Console.WriteLine($"{Name} Firing Bullet!");
+            Console.WriteLine($"{Type} Firing Bullet!");
             return 20.0f;
         }
 

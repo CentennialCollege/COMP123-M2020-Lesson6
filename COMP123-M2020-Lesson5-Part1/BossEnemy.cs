@@ -14,7 +14,7 @@ namespace COMP123_M2020_Lesson5_Part1
 
         // CONSTRUCTOR
         public BossEnemy() : 
-            base("Boss")
+            base(GameObjectType.BOSS)
         {
             
         }
@@ -24,7 +24,7 @@ namespace COMP123_M2020_Lesson5_Part1
         // PUBLIC METHODS
         public override float FireBullet()
         {
-            Console.WriteLine($"{Name} Firing FAT Bullet!");
+            Console.WriteLine($"{Type} Firing FAT Bullet!");
             return 40.0f;
         }
 
