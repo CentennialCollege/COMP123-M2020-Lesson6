@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace COMP123_M2020_Lesson5_Part1
 {
-    class GameObject
+    abstract class GameObject
     {
         // PRIVATE INSTANCE MEMBERS (FIELDS)
         private string m_name;
@@ -43,6 +43,7 @@ namespace COMP123_M2020_Lesson5_Part1
 
         // CONSTRUCTOR(S) 
 
+ 
         /// <summary>
         /// This Constructor requires a name for the GameObject with an optional health value.
         /// By Default all GameObjects have a health value of 100.0
@@ -55,7 +56,11 @@ namespace COMP123_M2020_Lesson5_Part1
             Health = health;
 
             m_initialize();
+
+            Start();
         }
+
+
 
         // PRIVATE METHODS
         private void m_initialize()
@@ -74,5 +79,11 @@ namespace COMP123_M2020_Lesson5_Part1
 
             return outputString;
         }
+
+        // PUBLIC ABSTRACT METHODS (MUST be overridden in the derived class)
+        public abstract void Start();
+        public abstract void Update();
+        public abstract void Reset();
+
     }
 }
