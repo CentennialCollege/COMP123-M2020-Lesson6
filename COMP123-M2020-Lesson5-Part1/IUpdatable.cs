@@ -6,14 +6,8 @@ using System.Threading.Tasks;
 
 namespace COMP123_M2020_Lesson5_Part1
 {
-    public enum GameObjectType
+    interface IUpdatable
     {
-        PLAYER,
-        RED_ENEMY,
-        BOSS,
-        BULLET,
-        PLATFORM,
-        NUM_OF_GAME_OBJECT_TYPES
+        void Update();
     }
 }
-
