@@ -3,7 +3,7 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.30114.105
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "COMP123-M2020-Lesson5-Part1", "COMP123-M2020-Lesson5-Part1\COMP123-M2020-Lesson5-Part1.csproj", "{53B2B3E0-D2DB-42D1-B1A3-54CBCBDB6D6E}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "COMP123-M2020-Lesson6-Part1", "COMP123-M2020-Lesson5-Part1\COMP123-M2020-Lesson6-Part1.csproj", "{53B2B3E0-D2DB-42D1-B1A3-54CBCBDB6D6E}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
